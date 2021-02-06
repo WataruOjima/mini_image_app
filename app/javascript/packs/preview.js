@@ -16,10 +16,12 @@ if (document.URL.match( /new/ ) || document.URL.match( /edit/ )) {
     };
     document.getElementById('message_image').addEventListener('change', function(e){
       // 画像が表示されている場合のみ、すでに存在している画像を削除する
-      const imageContent = document.querySelector('img');
-      if (imageContent){
-        imageContent.remove();
-      }
+      // ここから削除
+      // const imageContent = document.querySelector('img');
+      // if (imageContent){
+      //   imageContent.remove();
+      // }
+      // ここまで削除
 
       const file = e.target.files[0];
       const blob = window.URL.createObjectURL(file);
