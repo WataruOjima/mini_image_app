@@ -19,8 +19,9 @@ if (document.URL.match( /new/ ) || document.URL.match( /edit/ )) {
       blobImage.setAttribute('src', blob);
 
       // 生成したHTMLの要素をブラウザに表示させる
-      imageElement.appendChild(blobImage);
-      ImageList.appendChild(imageElement);
+      imageElement.appendChild(blobImage)
+      imageElement.appendChild(inputHTML)
+      ImageList.appendChild(imageElement)
     }
 
     document.getElementById('message_image').addEventListener('change', (e) => {
