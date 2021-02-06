@@ -5,6 +5,8 @@ if (document.URL.match( /new/ ) || document.URL.match( /edit/ )) {
     const createImageHTML = (blob) => {
        // 画像を表示するためのdiv要素を生成
       const imageElement = document.createElement('div')
+      imageElement.setAttribute('class', "image-element")
+      let imageElementNum = document.querySelectorAll('.image-element').length
 
       // ファイル選択ボタンを生成
       const inputHTML = document.createElement('input')
